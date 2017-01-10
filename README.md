@@ -56,6 +56,10 @@ Just one config is used to configure Domoboard. A example can be found the appli
 - serverlog
 - settings
 
+# Icons
+
+When configuring your config file you can set a icon name. Example: test = idx, <i>thermometer</i> will display a thermometer icon. The icons you can use are found here : http://fontawesome.io/icons/
+
 # API
 
 Domoboard has an API which can be found at "/api". All JavaScript files that update data frequently are using this API to obtain the information that is going to be displayed. By default all requests to the API are passed to the Domoticz backend. This means that Domoboard accepts the same API calls as Domoticz does.  However the API also allows an plugin developer to add its own API functions by creating an Python module. Developers can specify a "custom" GET-parameter which is patched in to the current API, this allows the developer to run their own Python functions when the API is called.
